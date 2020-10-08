@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("./RobotoCondensed.woff") format("woff");
+}
+@font-face {
+  font-family: "DigitalNumbers";
+  src: url("./DigitalNumbers.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#app {
+  height: 70%;
+  min-height: 280px;
+  width: 80%;
+  max-width: 580px;
+}
+
+#result {
+  height: 28%;
+  text-align: right;
+  font-size: 3.5em;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eee;
+  color: #444;
+  font-family: "DigitalNumbers";
+}
+
+#keypad {
+  display: flex;
+  flex-direction: row;
+  height: 72%;
+  color: #ddd;
+  font-family: "RobotoCondensed";
+}
+
+#nums {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 54%;
+}
+
+#ops {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 46%;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.333333%;
+  font-size: 1.5em;
+}
+
+.key-light {
+  background-color: #19676e;
+}
+
+.key-dark {
+  background-color: #095057;
+}
+
+.key-ops {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 50%;
+  height: 25%;
+}
+
+.key-ops-dark {
+  background-color: #b52d26;
+}
+
+.key-ops-light {
+  background-color: #d34e47;
+}
+
+.plus {
+  flex-basis: 50%;
+  background-color: #c43e37;
+}
